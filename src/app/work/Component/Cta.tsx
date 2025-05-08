@@ -1,5 +1,7 @@
+'use client';
 import React, { FC } from 'react';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 const Cta: FC = () => {
   return (
@@ -16,7 +18,7 @@ const Cta: FC = () => {
               Have a Project in mind?
             </h2>
             <p className="text-gray-700 mb-6 text-base md:text-lg">
-              We can help you bring your ideas to life. Let's talk about what we can build and raise together. Contact Navpatra Solutions today for a free consultation!
+              We can help you bring your ideas to life. Let&apos;s talk about what we can build and raise together. Contact Navpatra Solutions today for a free consultation!
             </p>
             <button
               type="button"
@@ -28,11 +30,13 @@ const Cta: FC = () => {
           </div>
 
           {/* Right Section (Image) */}
-          <div className="w-full h-64 sm:h-80 md:h-96 lg:h-full">
-            <img
+          <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-full">
+            <Image
               src="/cta-img.jpg"
               alt="Office workers collaborating in a modern workspace"
-              className="object-cover w-full h-full rounded-lg shadow-lg"
+              fill
+              className="object-cover rounded-lg shadow-lg"
+              priority
             />
           </div>
         </div>
@@ -47,7 +51,7 @@ const Cta: FC = () => {
             </div>
             <div>
               <p className="text-gray-300 text-base md:text-lg">
-                When connected with us, you aren't growing your business alone. We have your back and put in our best to contribute to the growth of your entire team and organization. So, if you are looking for the right agency that'll help you build a good online presence and bring in more conversions and revenue, we are right here!
+                When connected with us, you aren&apos;t growing your business alone. We have your back and put in our best to contribute to the growth of your entire team and organization. So, if you are looking for the right agency that&apos;ll help you build a good online presence and bring in more conversions and revenue, we are right here!
               </p>
             </div>
           </div>

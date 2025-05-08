@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
